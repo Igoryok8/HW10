@@ -19,10 +19,9 @@ public class Main {
         System.out.println("Сумма трат за месяц составила " + sum + " рублей");
         System.out.println();
         System.out.println("Задание 2");
-        int[] arr1 = generateRandomArray();
-        int min = arr1[0];
-        int max = arr1[0];
-        for (int costs : arr1) {
+        int min = arr[0];
+        int max = arr[0];
+        for (int costs : arr) {
             if (costs < min) {
                 min = costs;
             } else if (costs > max) {
@@ -38,8 +37,8 @@ public class Main {
         double averageCost = sum1 / 30;
         for (int costs : arr) {
             sum1 += costs;
-            averageCost = sum1 / 30;
         }
+        averageCost = sum1 / 30;
         System.out.println("Средняя сумма трат за месяц составила " + averageCost + " рублей");
         System.out.println();
         System.out.println("Задание 4");
